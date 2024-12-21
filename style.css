@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* First Div Styles */
+.div1 {
+    background-color: rgb(205, 250, 219);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: rgb(255, 207, 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-card .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.profile-card .title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile-card .button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.profile-card .button:hover {
+    background-color: #444;
+}
+
+.profile-card .linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+/* Second Div Styles */
+.div2 {
+    background-color: rgb(254, 238, 145);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-image {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #333;
+}
+
+.links {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.button2 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button2:hover {
+    background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
